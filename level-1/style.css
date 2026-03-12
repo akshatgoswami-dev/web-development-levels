@@ -11,14 +11,18 @@ body {
     font-family: lexend;
 }
 
-h1 {
-    background-color: black;
-    color: aqua;
-    font-size: 80px;
+#greeting{
+    /* background-color: black; */
+    color: deepskyblue;
+    height: 170px;
+    width: 610px;
 }
 
-h2 {
-    background-color: aqua;
-    color: black;
+#intro{
+    /* background-color: aqua; */
+   height: 39%;
+   width: 39%;
     font-size: 60px;
-}
+    font-weight: 300;
+    ;
+}   
