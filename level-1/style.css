@@ -10,19 +10,41 @@ body {
     width: 100%;
     font-family: lexend;
 }
-
-#greeting{
-    /* background-color: black; */
-    color: deepskyblue;
-    height: 170px;
-    width: 610px;
+#page{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
 }
 
-#intro{
-    /* background-color: aqua; */
-   height: 39%;
-   width: 39%;
-    font-size: 60px;
-    font-weight: 300;
-    ;
-}   
+#navigation{
+  height: 100px;
+  width: 100%;
+  /* background-color: #ED5B5B;  */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 35px ;
+}
+#heading{
+   /* font-size: 18px;   */
+   
+}
+ #menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+ #menu h3{
+    font-size: 20px;
+    border: 1.5px solid black;
+    padding: 3px 10px ;
+    border-radius: 50px;
+    font-weight: 400;
+
+ }
+ #menu i{
+    border: 1.5px solid black;
+    padding: 7px 10px;
+    border-radius: 100px;
+ }
