@@ -134,7 +134,7 @@ img {
 }
 
 #icons {
-   position: absolute;
+   position: fixed;
    bottom: 15%;
    right: 12%;
    font-size: 35px;
@@ -146,9 +146,36 @@ img {
 
 #startup {
    position: absolute;
-   bottom: 10%;
+   bottom: 11%;
    right: 10%;
    font-size: 22px;
    font-weight: 400;
    color: rgb(49 45 45);
+}
+
+#ad {
+   background-color: #fff;
+   color: #000000;
+   position: absolute;
+   top: 69%;
+   right: 31%;
+   transform: translate(-50%, -50%);
+   border: 2px solid #fff;
+   border-radius: 20px;
+   padding: 8px 5px;
+   font-size: 25px;
+   font-weight: 700;
+}
+
+#i {
+   color: #000000;
+   position: absolute;
+   top: 1%;
+   right: 100%;
+   background-color: #fff;
+   font-size: 39px;
+   font-weight: 400;
+   border: 1.5px solid #fff;
+   border-radius: 25px;
+   padding: 1px 6px;
 }
