@@ -11,14 +11,42 @@ body {
     font-family: lexend;
 }
 
-#heading h1 {
-    font-size: 80px;
-    font-weight: 500;
-    padding: 20px 30px;
-    
+#heading {
+    height: 45%;
+    width: 100%;
+    /* background-color: silver; */
 }
 
-#heading h5 {
+#heading h1 {
+    font-size: 145px;
     font-weight: 500;
-    padding-left: 33px;
+    padding: 50px;
+    line-height: 130px;
+    letter-spacing: -9px;
+
+}
+
+
+#place {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#place h3 {
+    font-size: 34px;
+    font-weight: 400;
+    padding-right: 45px;
+}
+
+#place h5 {
+    font-size: 34px;
+    font-weight: 400;
+    padding-left: 50px;
+}
+
+#img {
+    height: 187%;
+    width: 100%;
+    background-color:red;
 }
