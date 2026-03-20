@@ -9,9 +9,41 @@ body {
     height: 100%;
     width: 100%;
     font-family: lexend;
+    background-color: gainsboro;
+    line-height: 2;
 }
 
 #main h1 {
-    font-size: 50px;
-   text-align: center;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 7px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #B35454;
+    font-weight: 400;
+
+}
+
+#main p {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 3px;
+
+}
+
+
+#main h2 {
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+#Projects a{
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    margin: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    color: #B35454;
+    letter-spacing: 2px;
 }
