@@ -8,14 +8,13 @@ html,
 body {
     height: 100%;
     width: 100%;
-
+    font-family: lexend;
 }
 
 .card {
     width: 60%;
     height: 39%;
     border: 3px dotted blue;
-    font-family: lexend;
     margin: 40px auto;
     padding: 20px;
     display: flex;
