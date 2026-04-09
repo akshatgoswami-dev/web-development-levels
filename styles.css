@@ -9,8 +9,9 @@ body {
     height: 100%;
     width: 100%;
     font-family: lexend;
-    background-color: gainsboro;
+    background-color: rgb(250, 226, 81);
     line-height: 2;
+    
 }
 
 #main h1 {
@@ -19,7 +20,7 @@ body {
     letter-spacing: 7px;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #B35454;
+    color:rgb(189, 17, 74);
     font-weight: 400;
 
 }
@@ -38,12 +39,12 @@ body {
 }
 
 #Projects a{
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 500;
     display: flex;
     margin: 10px 10px;
     align-items: center;
     justify-content: center;
-    color: #B35454;
+    color: rgb(189, 17, 74);
     letter-spacing: 2px;
 }
