@@ -7,44 +7,73 @@
 html,
 body {
     height: 100%;
-    width: 100%;
     font-family: lexend;
-    background-color: rgb(250, 226, 81);
-    line-height: 2;
-    
+    background-color: gainsboro;
+    /* line-height: 4; */
+
 }
 
 #main h1 {
-    font-size: 70px;
+    font-size: 48px;
     text-align: center;
-    letter-spacing: 7px;
+    letter-spacing: 3px;
     margin-top: 30px;
     margin-bottom: 30px;
-    color:rgb(189, 17, 74);
+    color: rgb(10 10 10);
     font-weight: 400;
 
 }
 
 #main p {
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
     letter-spacing: 3px;
+    max-width: 800px;
+    margin: auto;
 
 }
 
 
 #main h2 {
-    margin-left: 40px;
-    margin-top: 60px;
+    margin: 60px 40px;
 }
 
-#Projects a{
-    text-decoration: underline;
+#Projects a {
+    text-decoration: none;
     font-weight: 500;
+    color: rgb(30 34 37);
+    border: 1.5px solid #000;
+    border-radius: 12px;
+    width: 220px;
+    letter-spacing: 4px;
+    padding: 16px 8px;
+    background-color: silver;
+    box-shadow: 0 3px 10px rgb(112 169 223);
+    font-size: 16px;
+}
+
+#Projects {
     display: flex;
-    margin: 10px 10px;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
     justify-content: center;
-    color: rgb(189, 17, 74);
-    letter-spacing: 2px;
+}
+
+.project-card {
+    padding: 18px;
+    
+   
+
+
+}
+
+.project-card:hover {
+    transform: translatey(-4px);
+    transition: transform 0.3s ease;
+}
+
+
+#Projects a:hover{
+     background-color: lightsteelblue;
 }
