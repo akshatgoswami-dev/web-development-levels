@@ -12,8 +12,8 @@ body {
 }
 
 .hero {
-    max-height: fit-content;
-    height: 35%;
+    max-height: 600px;
+    height: 36%;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -24,9 +24,10 @@ body {
     padding: 15px 20px;
     gap: 40px;
     color: dodgerblue;
-    background-image: url(https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGI1OXQ1ZDlrYTgzbG5hbnFyc2xyNDRucGo4YThkdmhtNmxzZ3U5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iicDrNGWxHmDrIni6j/giphy.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     flex-wrap: wrap;
 
 
@@ -47,9 +48,10 @@ body {
 .btn {
     padding: 4px 10px;
     font-size: 24px;
-    border: none;
+    border: 2px solid #fff;
     font-family: inherit;
-   background: white;
+    background: white;
+    transform: translateY(-4px);
 
 
 }
@@ -60,4 +62,12 @@ body {
 
 #logo {
     width: 200px;
+    /* background-color: beige; */
+}
+
+.btn:hover {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid lightskyblue;
+    border-radius: 20px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
