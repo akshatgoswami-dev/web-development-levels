@@ -9,6 +9,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: orbitron;
+    background-color: aliceblue;
 }
 
 .hero {
@@ -23,18 +24,19 @@ body {
     /* margin: 20px 0; */
     padding: 15px 20px;
     gap: 40px;
-    color: dodgerblue;
+    color: #7fdfff;
     background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGI1OXQ1ZDlrYTgzbG5hbnFyc2xyNDRucGo4YThkdmhtNmxzZ3U5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iicDrNGWxHmDrIni6j/giphy.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     flex-wrap: wrap;
+    text-shadow: 0 0 4px black;
 
 
 }
 
 .hero h2 {
-    color: deepskyblue;
+    color: #82a5ca;
 
 }
 
@@ -46,18 +48,24 @@ body {
 }
 
 .btn {
+    text-shadow: 1px 2px #146B8D;
+    color: #82a5ca;
     padding: 4px 10px;
     font-size: 24px;
-    border: 2px solid #fff;
+    border: 2px solid #A53AA5;
     font-family: inherit;
     background: white;
     transform: translateY(-4px);
+    cursor: crosshair;
+    border-radius: 8px;
 
 
 }
 
 .cta {
     border-bottom: 4px solid #fff;
+    color: cyan;
+    text-shadow: 2px -2px 0 mediumvioletred;
 }
 
 #logo {
@@ -70,4 +78,16 @@ body {
     border: 2px solid lightskyblue;
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.main {
+    margin: 10px;
+    text-align: center;
+    color: #82a5ca;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-weight: 800;
+    text-shadow: 3px -1px 0px darkslateblue;
+    opacity: 75%;
+
 }

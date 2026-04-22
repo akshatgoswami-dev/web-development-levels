@@ -55,16 +55,14 @@ body {
 #Projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 32px;
     padding: 20px;
     justify-content: center;
+
 }
 
 .project-card {
     padding: 18px;
-    
-   
-
 
 }
 
@@ -74,6 +72,6 @@ body {
 }
 
 
-#Projects a:hover{
-     background-color: lightsteelblue;
+#Projects a:hover {
+    background-color: lightsteelblue;
 }
