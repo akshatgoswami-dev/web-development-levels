@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: happy monkey;
+    background-color: #a2d2ff;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    /* margin: 10px; */
+    /*never use margin on a container*/
+    gap: 24px;
+    background-color: #a2d2ff;
+    color: #ffff;
+
+}
+
+.shadow {
+    text-shadow: 0 0 1px black;
+}
+
+.hero h2,
+.hero h3 {
+    background: #EFB0C9;
+}
+
+.img {
+    border: 8px solid #EFB0C9;
+    width: 350px;
+    border-radius: 220px;
+    object-fit: cover;
+    background-position: contain;
+    background-size: right;
+}
+
+.gift-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 16px;
+    color: #ffff;
+
+}
+
+.gift-container h2 {
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+.gift-container h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.img-gift {
+    width: 500px;
+    height: 500px;
+    border: 8px solid white;
+    border-radius: 8px;
+    object-fit: cover;
+    background-position: center;
+    background-image: url(https://img.freepik.com/premium-vector/realistic-pastel-color-square-open-gift-box-with-red-bow_755228-2426.jpg?semt=ais_hybrid&w=740&q=80);
+
+}
+
+.img-gift:hover {
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjU0ZGlpYWZuMDdzZGRwY2JiaDJnN29kajhwNGw0aXJ0aWZkM2VqNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rjkJD1v80CjYs/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
