@@ -6,10 +6,10 @@
 
 html,
 body {
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
     font-family: happy monkey;
-    background-color: #a2d2ff;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+
 }
 
 .hero {
@@ -21,7 +21,7 @@ body {
     /* margin: 10px; */
     /*never use margin on a container*/
     gap: 24px;
-    background-color: #a2d2ff;
+    /* background-color: #a2d2ff; */
     color: #ffff;
 
 }
