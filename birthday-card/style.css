@@ -28,6 +28,7 @@ body {
 
 .shadow {
     text-shadow: 0 0 1px black;
+    margin-bottom: 10px;
 }
 
 .hero h2,
@@ -52,6 +53,7 @@ body {
     padding: 20px;
     gap: 16px;
     color: #ffff;
+    margin-top: 40px;
 
 }
 
@@ -66,20 +68,38 @@ body {
     font-weight: 400;
 }
 
-.img-gift {
+.gift-img {
     width: 500px;
     height: 500px;
     border: 8px solid white;
     border-radius: 8px;
     object-fit: cover;
     background-position: center;
-    background-image: url(https://img.freepik.com/premium-vector/realistic-pastel-color-square-open-gift-box-with-red-bow_755228-2426.jpg?semt=ais_hybrid&w=740&q=80);
+
 
 }
 
-.img-gift:hover {
+#img-gift-happy {
+    background-image: url(https://img.freepik.com/premium-vector/realistic-pastel-color-square-open-gift-box-with-red-bow_755228-2426.jpg?semt=ais_hybrid&w=740&q=80);
+    transform: translateX(-6px);
+}
+
+#img-gift-happy:hover {
+    transition: all 0.8s ease;
     background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjU0ZGlpYWZuMDdzZGRwY2JiaDJnN29kajhwNGw0aXJ0aWZkM2VqNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rjkJD1v80CjYs/giphy.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    
+}
+
+#img-gift-hot {
+    background-image: url(https://img.freepik.com/premium-vector/realistic-pastel-color-square-open-gift-box-with-red-bow_755228-2426.jpg?semt=ais_hybrid&w=740&q=80);
+    transform: translateX(-6px);
+
+}
+
+#img-gift-hot:hover {
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGZrejdvdnZjd2Y0OXV4ZjZkbXdheDZxcG1xYjgzaXk4cnd6NDVrbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3PzmBpZt0iimrcWvfV/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.8s ease;
 }
