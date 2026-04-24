@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: auto;
+    width: 100%;
+    font-family: "Roboto mono", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+
+#hero {
+    color: lavenderblush;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 35%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1682048358672-1c5c6c9ed2ae?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    text-shadow: 0 0 5px black;
+    gap: 16px;
+    padding: 20px auto;
+
+
+
+}
+
+.activity-container {
+    height: 380px;
+    width: 100%;
+    background-color: paleturquoise;
+
+}
+
+.activity-card {}
+
+.activity-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.activity-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+}
+
+#theater-img {
+    /* background-color: aqua; */
+    width: 250px;
+
+}
+
+#park-img {
+    /* background-color: lime; */
+    width: 250px;
+}
+
+#beach-img {
+    /* background-color: lightcoral; */
+    width: 250px;
+}
+
+.tour-card {
+    background-color: black;
+}
+
+.card {
+    max-width: 1100px;
+    margin: 40px auto;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    overflow: hidden;
+}
