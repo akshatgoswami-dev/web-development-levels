@@ -11,42 +11,180 @@ body {
     font-family: lexend;
 }
 
-#heading {
-    height: 45%;
+.hero-text {
+    height: 420px;
     width: 100%;
     /* background-color: silver; */
 }
 
-#heading h1 {
-    font-size: 145px;
+#nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 10px;
+    /* background-color: black; */
+
+
+
+}
+
+#nav h3 {
+    margin: 0 5px;
+    border: 2px solid black;
+    padding: 12px 20px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+
+
+}
+
+.intro-text h1 {
+    font-size: 135px;
     font-weight: 500;
-    padding: 50px;
+    padding: 25px;
     line-height: 130px;
     letter-spacing: -9px;
 
 }
 
 
-#place {
+.place {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#place h3 {
+.place h3 {
     font-size: 34px;
     font-weight: 400;
     padding-right: 45px;
 }
 
-#place h5 {
+.place h5 {
     font-size: 34px;
     font-weight: 400;
     padding-left: 50px;
 }
 
 #img {
-    height: 187%;
+    height: 800px;
+    background-image: url(https://images.unsplash.com/photo-1624290430048-cd44e537a0c3?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 35%;
+
+}
+
+.main {
+    padding: 40px;
+    height: 480px;
+
+}
+
+.main-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 0 25px;
+    margin: 10px;
     width: 100%;
-    background-color:red;
+    font-size: 30px;
+    color: black;
+}
+
+.main p {
+    text-align: left;
+
+
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+
+
+
+}
+
+.hero-text h2 {
+    margin: 30px ;
+    font-size: 88px;
+    letter-spacing: -3px;
+    font-weight: 500;
+    border-right: 2px solid black;
+    line-height: 90px;
+
+}
+
+#icons {
+    text-decoration: none;
+
+
+
+}
+
+#icons i {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+
+.skills{
+    padding: 20px;
+    border-top: 2px solid black;
+    display: flex;
+}
+
+.skill-start {
+    width: 30%;
+    height: auto;
+    margin: 30px ;
+    padding: 20px ;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 29px;
+    font-weight: lighter;
+    border-right: 2px solid black;
+
+}
+
+
+.skill-set {
+    width: 60%;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: baseline;
+    padding: 30px;
+
+}
+.skill-1{
+    border-bottom: 2px solid black;
+    /* padding: 20px; */
+
+}
+
+.row1{
+    padding: 20px;
+    margin: 10px 20px;
+    
+   border-right: 2px solid black;
+    /* background-color: navy; */
+}
+
+.row2 {
+    padding: 20px;
+    margin: 10px 20px;
+    
+   
+   
+   /* background-color:  red; */
 }
