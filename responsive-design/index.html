@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>queries</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -15,17 +15,42 @@
     />
   </head>
   <body>
-    <header class="hero">
-      <div class="heading">
-        <h2>Chats</h2>
+    <div id="hero-container">
+      <header class="hero">
+        <div class="heading">
+          <h2>Chats</h2>
+        </div>
+        <div class="icons">
+          <i class="ri-chat-new-fill"></i>
+          <i class="ri-more-2-fill"></i>
+        </div>
+      </header>
+      <div class="input-search">
+        <input
+          type="search"
+          placeholder="Search or start a new chat"
+          title="Search or start a new chat"
+        />
       </div>
-      <div class="icons">
-        <i class="ri-chat-new-fill"></i>
-        <i class="ri-more-2-fill"></i>
-      </div>
-    </header>
-    <div class="input-search" >
-        <input type="search" placeholder="Search or start a new chat" title="Search or start a new chat">
     </div>
+    <nav class="navbar">
+      <h3>all</h3>
+      <h3>unread</h3>
+      <h3>starred</h3>
+      <h3>favourites</h3>
+      <h3>personal</h3>
+    </nav>
+
+    <section class="chats">
+      <div class="chat-1">
+        <img src="/solo-project/akshat.png" alt="a man standing in front of a camera looking at a distance">
+
+        <div class="chat-details">
+          <h2>AKSHU</h2>
+          <p>Naha loo</p>
+
+        </div>
+      </div>
+    </section>
   </body>
 </html>
