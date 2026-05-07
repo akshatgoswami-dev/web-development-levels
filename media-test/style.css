@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.4rem;
+    border-bottom: 2px solid grey;
+}
+
+.hero h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+
+.hero-nav {
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+}
+
+.hero-nav h3{
+    font-size: 1.7vmin;
+    font-weight: 600;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    transition: 0.4s ease;
+}
+.hero-nav h3:hover{
+    background-color: lightgray;
+    border: 2px solid grey;
+}
