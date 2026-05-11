@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: lexend;
+}
+
+
+
+.hero {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.8rem 3.4rem;
+    border-bottom: 1.5px solid grey;
+    background-color: white;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+
+.hero-nav {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.hero-nav h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    transition: 0.4s ease;
+}
+
+.hero-nav i {
+    font-size: 2.2rem;
+    font-weight: 300;
+    transition: 0.4s ease;
+    padding: 8px 10px;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    display: none;
+}
+
+.content {
+    width: 100%;
+    /* background-color: whitesmoke; */
+    display: flex;
+    padding: 4rem 1.4rem;
+    flex-wrap: wrap;
+}
+
+.left {
+    height: 50%;
+    width: 50%;
+    background-color: palegoldenrod;
+    padding: 7.4rem 3.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+
+
+}
+
+.para-typo {
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: rgb(82 78 78);
+}
+
+
+
+.span-left {
+    display: inline-block;
+    color: plum;
+    transition: 0.2s ease;
+
+}
+
+.right {
+    height: 50%;
+    width: 50%;
+    background-color: thistle;
+    padding: 7.4rem 3.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.span-right {
+    display: inline-block;
+    color: khaki;
+    transition: 0.2s ease;
+}
+
+.text-shadow {
+    text-shadow: -1px 1px 2px black;
+}
+
+.btn {
+    padding: 0.6rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    max-width: 400px;
+    transition: 0.2s ease;
+}
+
+.about {
+    width: 100%;
+    max-height: 5vmax;
+    /* background-color: steelblue; */
+    margin: 3.5rem 0;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.about h1 {
+    margin: 4rem 0;
+    transition: 0.2s ease;
+}
+
+
+.about-container {
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.about-cards {
+    background-color: whitesmoke;
+    padding: 2rem;
+    max-width: 500px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0 0 0 / 0.2);
+}
+
+.about-cards h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+.about-cards p {
+    font-size: 1.2rem;
+    color: rgb(97 94 94);
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    text-align: left;
+    transition: 0.2s ease;
+}
+
+.about-cards a {
+    margin: 2rem 0;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    color: royalblue;
+}
+
+img {
+    height: 3rem;
+    max-block-size: 40px;
+    /* mask-image: linear-gradient(blue, aqua, lightseagreen); */
+}
+
+.about-cards a i {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* ------------hover------------- */
+.btn:hover {
+    background-color: lightgrey;
+
+    transform: scale(1.070);
+}
+
+.hero-nav h3:hover {
+    background-color: lightgray;
+    border: 2px solid grey;
+}
+
+.hero-nav i:hover {
+    background-color: lightgray;
+    border: 2px solid grey;
+}
+
+.span-left:hover,
+.span-right:hover {
+    transform: scale(1.072);
+    color: turquoise;
+}
+
+.about h1:hover {
+    color: royalblue;
+    transform: scale(1.02);
+}
+
+.about-container h2:hover {
+    color: royalblue;
+}
+
+.about-cards p:hover {
+  
+    
+
+}
+
+/* --------------------------media queries/-------------------- */
+
+
+@media (max-width:999px) {
+
+    .right h1,
+    .left h1 {
+        font-size: 3vmax;
+    }
+}
+
+@media (max-width: 745px) {
+    .hero {
+        padding: 1.2rem 0.8rem;
+    }
+
+
+    .hero h2 {
+        font-size: 1.8rem;
+
+    }
+
+    .hero-nav h3 {
+        display: none;
+
+    }
+
+    .hero-nav i {
+        display: block;
+        font-size: 1.8rem;
+    }
+
+    .content {
+        max-width: 1300px;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        text-align: left;
+        flex-direction: column;
+        gap: 2rem;
+        /* padding: 0.6rem; */
+    }
+
+    .right,
+    .left {
+        padding: 5rem 2rem;
+        width: auto;
+        text-align: left;
+    }
+
+
+
+}
