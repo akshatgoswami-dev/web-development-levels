@@ -230,13 +230,10 @@ img {
 
 .about-container h2:hover {
     color: royalblue;
+ text-decoration: 1.3px underline;
 }
 
-.about-cards p:hover {
-  
-    
-
-}
+.about-cards p:hover {}
 
 /* --------------------------media queries/-------------------- */
 
@@ -286,6 +283,28 @@ img {
         padding: 5rem 2rem;
         width: auto;
         text-align: left;
+    }
+
+    .about-cards {
+        max-height: 370px;
+        max-width: 280px;
+        gap: 0.8rem;
+        text-align: left;
+        flex-wrap: nowrap;
+    }
+
+    .about-cards h2 {
+        font-size: 2.8vmax;
+        width: 100%;
+    }
+
+    .about-cards p {
+        font-size: 1.4vmax;
+
+    }
+
+    img{
+        max-block-size: 30px;
     }
 
 
