@@ -61,12 +61,12 @@ body {
 
 }
 
-.project-card {
+.project-cards {
     padding: 18px;
 
 }
 
-.project-card:hover {
+.project-cards:hover {
     transform: translatey(-4px);
     transition: transform 0.3s ease;
 }
