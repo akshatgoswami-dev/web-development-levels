@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: happy monkey;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    /* margin: 10px; */
+    /*never use margin on a container*/
+    gap: 24px;
+    /* background-color: #a2d2ff; */
+    color: #ffff;
+
+}
+
+.shadow {
+    text-shadow: 0 0 2px black;
+    margin-bottom: 10px;
+}
+
+.hero h2,
+.hero h3 {
+    background: #EFB0C9;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.hero h2:hover,
+.hero h3:hover {
+    transform: scale(1.1);
+}
+
+.img {
+    border: 8px solid #EFB0C9;
+    width: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: contain;
+    background-size: right;
+    transform: translateX(-2px);
+    transition: border-radius 0.35s ease, transform 0.35s ease;
+}
+
+.img:hover {
+    border: 8px solid transparent;
+    background:
+        linear-gradient(limegreen, white) padding-box,
+        linear-gradient(45deg, darkslateblue, cyan) border-box;
+    border-radius: 18px;
+    transform: scale(1.03);
+
+}
+
+.gift-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 16px;
+    color: #ffff;
+    margin-top: 40px;
+}
+
+.gift-container h2 {
+    font-size: 35px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.gift-container h2:hover {
+    transform: scale(1.05);
+}
+
+.gift-container h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.img-gift {
+    max-width: 90%;
+    height: auto;
+    width: 500px;
+    height: 500px;
+    border: 8px solid white;
+    border-radius: 8px;
+    object-fit: cover;
+    background-position: center;
+    transform: translateX(-6px);
+    background-image: url(https://img.freepik.com/premium-vector/realistic-pastel-color-square-open-gift-box-with-red-bow_755228-2426.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.8s ease;
+    cursor: pointer;
+
+}
+
+#img-gift-happy:hover {
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjU0ZGlpYWZuMDdzZGRwY2JiaDJnN29kajhwNGw0aXJ0aWZkM2VqNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rjkJD1v80CjYs/giphy.gif);
+    transform: scale(1.03);
+    border: 8px solid transparent;
+}
+
+
+#img-gift-hot:hover {
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGZrejdvdnZjd2Y0OXV4ZjZkbXdheDZxcG1xYjgzaXk4cnd6NDVrbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3PzmBpZt0iimrcWvfV/giphy.gif);
+    transform: scale(1.03);
+    border: 8px solid transparent;
+    border-radius: 4px;
+}
+
+
+#img-gift-genius:hover {
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MWYyb3N6OTltZHMxZXd1eGJ4M2EzbGpsNWNiZmVzYWNnNXU2ZTJpZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MJ21zS1oxr3XiXBXIM/giphy.gif);
+    transform: scale(1.03);
+    border: 8px solid transparent;
+    border-radius: 4px;
+
+}
+
+#img-gift-badass:hover {
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3emowdzN2cTd5YTFlOGN1OG1tZDB3bDMwcDF3bnpiY3N2a2F0ZTMxeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vKHxl6iM2aZdtTdJ0Y/giphy.gif);
+    transform: scale(1.03);
+    border: 8px solid transparent;
+    border-radius: 4px;
+
+
+}
+
+#img-gift-cheers {
+    height: 320px;
+
+}
+
+#img-gift-cheers:hover {
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnR2cTIzcXc4MnRpenIxMTRqcTd5eWQ1Y2hjcDJiZnpzZDBoaGtlYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yziuK6WtDFMly/giphy.gif);
+    transform: scale(1.03);
+    border: 8px solid transparent;
+    border-radius: 4px;
+}
+
+.footer {
+    margin: 35px auto;
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+    font-style: italic;
+
+}
+
+a {
+    text-transform: italic;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
