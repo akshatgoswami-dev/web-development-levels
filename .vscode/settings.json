@@ -3,7 +3,9 @@
         "Goswami",
         "lexend",
         "Madhya",
+        "Oppo",
         "Pradesh",
         "Saira"
-    ]
+    ],
+    "codeium.enableCodeLens": false
 }
