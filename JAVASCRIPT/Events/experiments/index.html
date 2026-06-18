@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto mono;
+      }
+      .main {
+        padding: 1.2rem 2rem;
+      }
+      input {
+        padding: 12px 22px;
+        border-radius: 10px;
+        font-size: 1rem;
+        user-select: none;
+      }
+
+      .text{
+        background-color: rgb(8, 128, 112);
+        padding: 12px 22px;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 1px 12px rgb(8, 128, 112);
+        user-select: none;
+      }
+      .input{
+        display: none;
+      }
+      .flex {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+    </style>
+    <!-- <h1 class="text">hello world</h1>
+    <p class="text">make me green?</p>
+    <input type="text" placeholder="type something" /> -->
+    <!-- <h2 class="text">choose your device</h2>
+    <select>
+      <option value="default" selected disabled>choose your device</option>
+      <option value="samsung">samsung</option>
+      <option value="apple">Apple Iphone</option>
+      <option value="Oppo">Oppo</option>
+      <option value="MI">Xiaomi</option>
+      <option value="nothing">Nothing CMF</option>
+      <option value="vivo">Vivo</option>
+      <option value="google">google pixel</option>
+    </select> -->
+
+    <!-- <h1 id="hero-text" class="text">a</h1> -->
+
+    <input  class = "input" type="file" />
+    <div class="text">
+        <h2>upload files</h2>
+    </div>
+    <!-- <div class="main">
+      <form class="flex" action="">
+        <input type="text" placeholder="Enter Your Name" />
+        <input type="number" placeholder="Contact Number" />
+        <input type="email" placeholder="Enter Your Email" />
+        <input type="email" placeholder="Profile pic" />
+        <input type="submit" />
+      </form>
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
