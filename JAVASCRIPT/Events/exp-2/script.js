@@ -33,4 +33,7 @@ form.addEventListener("submit", (e) => {
   p.textContent = inputs[2].value;
   card.appendChild(p);
   document.body.prepend(card);
+  if (inputs.type !== "submit") {
+    val.value = "";
+  }
 });
