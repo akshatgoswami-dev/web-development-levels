@@ -12,7 +12,7 @@
 // console.log(rps("paper", "rock"));
 
 function rps(user, computer) {
-  if ((!user || !computer)) {
+  if (!user || !computer) {
     return "please enter your input";
   }
   if (
@@ -25,9 +25,8 @@ function rps(user, computer) {
   if (user === computer) {
     return "draw";
   }
-  
 
   return "computer won";
 }
 
-rps( );
+rps();
