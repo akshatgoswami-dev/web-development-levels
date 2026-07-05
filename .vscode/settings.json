@@ -7,5 +7,7 @@
         "Pradesh",
         "Saira"
     ],
-    "codeium.enableCodeLens": false
+    "codeium.enableCodeLens": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.colorTheme": "Dark Modern"
 }
