@@ -1,6 +1,6 @@
 const users = [
   {
-    name: "Emma Wilson",
+    name: "Emma Wilson Allen",
     pic: "https://i.pravatar.cc/300?img=5",
     bio: "living for sunsets 🌅 | book lover 📚",
   },
