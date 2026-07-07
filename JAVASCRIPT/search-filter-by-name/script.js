@@ -211,6 +211,9 @@ const users = [
     bio: "web developer 🌐 | debugging one bug at a time 🐞",
   },
 ];
+
+let userContainer = document.querySelector(".users");
+
 function showUsers(arr) {
   arr.forEach(function (user) {
     const userCard = document.createElement("div");
@@ -225,7 +228,7 @@ function showUsers(arr) {
     userCard.appendChild(heading);
     userCard.appendChild(para);
 
-    document.querySelector(".users").appendChild(userCard);
+    userContainer.appendChild(userCard);
   });
 }
 
@@ -234,14 +237,21 @@ showUsers(users);
 let Search = document.querySelector("#Search");
 
 Search.addEventListener("input", (e) => {
-  console.dir(Search);
   const typedText = Search.value.toLowerCase();
+
   const filteredUsers = users.filter((user) => {
     return user.name.trim().toLowerCase().includes(typedText);
   });
-  document.querySelector(".users").innerHTML = "";
+  userContainer.innerHTML = "";
   showUsers(filteredUsers);
 
-  if (showUsers) {
+  if (filteredUsers.length === 0) {
+    console.log("Yes");
+    const noUser = document.createElement("h2");
+    noUser.textContent = "No User Found";
+    noUser.classList.add("h2-display");
+    userContainer.appendChild(noUser);
+  } else {
+    showUsers(filteredUsers);
   }
 });
