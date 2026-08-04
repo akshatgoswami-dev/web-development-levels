@@ -11,6 +11,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: lexend;
+    overflow-x: hidden;
 }
 
 
@@ -230,7 +231,7 @@ img {
 
 .about-container h2:hover {
     color: royalblue;
- text-decoration: 1.3px underline;
+    text-decoration: 1.3px underline;
 }
 
 .about-cards p:hover {}
@@ -303,7 +304,7 @@ img {
 
     }
 
-    img{
+    img {
         max-block-size: 30px;
     }
 
