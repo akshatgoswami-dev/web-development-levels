@@ -156,6 +156,8 @@ function createCard(task) {
   const card = document.createElement("div");
   card.className = "card";
   // Avatar
+  const header = document.createElement("div");
+  header.className = "img-name";
   const avatar = document.createElement("div");
   avatar.className = "avatar";
   const img = document.createElement("img");
@@ -166,7 +168,7 @@ function createCard(task) {
   const name = document.createElement("h2");
   name.textContent = task.fullName;
   name.classList.add("username");
-  avatar.append(name);
+  header.append(avatar, name);
   // Info
   const info = document.createElement("div");
   info.className = "info";
@@ -213,7 +215,7 @@ function createCard(task) {
   actions.append(callBtn, msgBtn);
 
   // Assemble card
-  card.append(avatar, info, actions);
+  card.append(header, info, actions);
 
   cardCont.appendChild(card);
   return cardCont;
@@ -251,3 +253,4 @@ function showToast(msg) {
     toast.classList.remove("show");
   }, 3500);
 }
+
