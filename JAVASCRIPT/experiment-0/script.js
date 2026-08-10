@@ -1,18 +1,37 @@
-function GetVal(Val) {
-  if (Val < 55) return "D";
-  else if (Val < 60) return "C";
-  else if (Val < 75) return "B";
-  else return "A";
+function createToaster(config) {
+  return function (str) {
+    let parDiv = document.querySelector(".parent");
+    let div = document.createElement("div");
+    div.textContent = str;
+    div.className = "toaster";
+    parDiv.appendChild(div);
+    setTimeout(() => {
+      parDiv.removeChild(div);
+    }, config.duration * 1000);
+
+    if (config.positionX !== "left") {
+      parDiv.classList.add("toaster-right");
+    } else {
+      parDiv.classList.add("toaster-left");
+    }
+    if (config.positionY !== "top") {
+      parDiv.classList.add("toaster-bottom");
+    } else {
+      parDiv.classList.add("toaster-top");
+    }
+  };
 }
 
-function Getgrade(score) {
-  if (score >= 90 && score <= 100) return "A+";
-  if (score >= 80 && score <= 89) return "A";
-  if (score >= 70 && score <= 79) return "B";
-  if (score >= 60 && score <= 69) return "C";
-  if (score >= 33 && score <= 59) return "D";
-  if (score >= 0 && score <= 32) return "fail";
-  return "invalid marks ❌";
-}
+let toaster = createToaster({
+  positionX: "right",
+  positionY: "top",
+  duration: 4,
+  theme: "dark",
+});
 
+toaster("hello world this is akshat, and im building to become a builder");
+toaster("i almost set the code backwards lMao");
 
+setTimeout(() => {
+  toaster("F h k o u...");
+}, 2000);

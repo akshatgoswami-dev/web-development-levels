@@ -1,12 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: lexend;
+      }
+
+      .box {
+        height: 100px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .box input {
+        height: 45px;
+        width: 400px;
+        text-align: center;
+        border-radius: 14px;
+      }
+
+      input::placeholder {
+        color: rgb(6, 71, 6);
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      input:disabled{
+        background-color: rgb(121, 125, 125);
+      }
+
+      input:focus{
+        background-color: rgb(218, 195, 239);
+        
+      }
+
+
+      .options {
+        background-color: rgb(0, 0, 0);
+        max-width: 340px;
+        display: flex;
+        gap: 2rem;
+      }
+      .choices {
+        color: rgb(0, 0, 0);
+        padding: 12px 18px;
+        background-color: rgb(254, 255, 254);
+        border: 1.8px solid rgb(12, 178, 234);
+
+        transition: all 0.3s ease;
+      }
+      .choices:hover {
+        border-radius: 60px;
+        background-color: rgba(254, 255, 254, 0.648);
+        color: rgb(20, 223, 54);
+        text-shadow: 0 0 3px black;
+      }
+    </style>
+  </head>
+  <body>
     <script src="script.js"></script>
-</head>
-<body>
-    
-</body>
+  </body>
 </html>

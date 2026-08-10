@@ -1,16 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: auto;
+      font-family: lexend;
+      background-color: black;
+    }
+
+    .toaster {
+      margin: 2.4rem 1.8rem;
+      padding: 1.2rem;
+      background-color: rgb(46, 45, 45);
+      font-size: clamp(1.2rem, 1.4vmax, 1.3rem);
+      font-weight: 500;
+      color: rgb(235, 233, 238);
+      border: 1px solid transparent;
+      display: flex;
+      flex-direction: column;
+      text-transform: capitalize;
+      max-width: 640px;
+      width: 70%;
+      transition: all 1s ease;
+      transform: translateX(1);
+      letter-spacing: 1px;
+    }
+
+    .toaster-right {
+      position: fixed;
+      right: 2rem;
+      top: auto;
+    }
+    .toaster-left {
+      position: fixed;
+      left: 2rem;
+      top: auto;
+    }
+
+    .toaster-top {
+      position: fixed;
+      top: 2rem;
+      left: auto;
+    }
+    .toaster-bottom {
+      position: fixed;
+      bottom: 2rem;
+      left: auto;
+    }
+  </style>
+  <body>
+    <div class="parent"></div>
+
     <script src="script.js"></script>
-    
-    
-</head>
-<body>
-    
-    
-</body>
+  </body>
 </html>
