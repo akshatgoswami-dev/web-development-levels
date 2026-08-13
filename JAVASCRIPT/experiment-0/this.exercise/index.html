@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: auto;
+      background-color: #222;
+      font-family: lexend;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem;
+    }
+
+    input {
+      padding: 0.4rem 0.8rem;
+      font-size: 15px;
+    }
+
+    .card-container {
+      color: white;
+      /* background-color: rgb(54, 54, 53); */
+    }
+    .avatar img {
+      max-block-size: 120px;
+      border-radius: 50%;
+      transition: all 0.2s ease;
+    }
+    .avatar img:hover {
+      transform: scale(1.2);
+    }
+
+    .card {
+      background-color: rgb(49, 50, 50);
+      max-width: 300px;
+      margin: 2rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(93, 92, 92);
+      border-radius: 20px;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+    .card:hover {
+      background-color: rgb(65, 66, 66);
+      border-radius: 35px;
+    }
+
+    .shadow {
+      text-shadow: 0 0 4px black;
+    }
+    .name {
+      font-size: 0.8rem;
+      text-transform: capitalize;
+      color: rgb(236, 240, 240);
+    }
+    .role {
+      font-size: 0.8rem;
+      color: rgb(216, 58, 216);
+    }
+    .bio {
+      font-size: 0.8rem;
+      color: rgb(167, 164, 164);
+    }
+
+    .display {
+      background-color: rgb(112, 113, 113);
+      height: 60px;
+      width: 80px;
+    }
+    .clear {
+      background-color: chartreuse;
+      color: rgb(4, 4, 4);
+      padding: 12px 22px;
+      margin: 2rem 1rem;
+      border: 2px solid black;
+    }
+  </style>
+  <body>
+    <form action="">
+      <input type="text" id="name" placeholder="Enter Your Name" />
+      <input type="url" id="image" placeholder="Enter Image URL" />
+      <input type="text" id="role" placeholder="Enter Your Role " />
+      <input type="text" id="bio" placeholder="Enter Your Bio" />
+      <input type="submit" />
+    </form>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="avatar">
+          <img
+            src="https://i.pinimg.com/736x/5f/79/ea/5f79eae006365020a1cf50534a1b4314.jpg"
+            alt="avatar"
+          />
+        </div>
+        <div class="name shadow">
+          <h1>spidy-billu</h1>
+        </div>
+        <div class="role shadow">
+          <h3>part-time hero</h3>
+        </div>
+        <div class="bio shadow">
+          <p>i saved this cat!</p>
+        </div>
+      </div>
+    </div>
+    <input id="vowels" type="text" placeholder="enter the input" />
+    <button class="clear">clear</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

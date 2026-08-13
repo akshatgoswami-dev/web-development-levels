@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      font-family: lexend;
+      background-color: rgb(0, 0, 0);
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      width: 100%;
+      margin: 1rem;
+      padding: 1rem;
+      text-align: center;
+      color: rgba(236, 229, 229, 0.722);
+      border-bottom: 2px solid grey;
+    }
+    input {
+      padding: 2rem;
+      color: rgb(212, 31, 31);
+    }
+    label {
+      padding: 1.2rem 0;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+    }
+
+    form {
+      /* max-height: 500px; */
+      margin: 2rem 6rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1.2rem;
+
+      /* mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 8%,
+        black 92%,
+        transparent 100%
+      ); */
+    }
+
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0c0c0c75;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+
+    .addBtn {
+      padding: 8px 16px;
+      background-color: rgb(79, 79, 79);
+      color: rgb(235, 235, 235);
+      font-size: 16px;
+      border: 2px solid rgb(159, 158, 158);
+      border-radius: 20px;
+      text-align: center;
+    }
+    .form-wrapper {
+      width: 1500px;
+      height: 700px;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: center; */
+      overflow-y: scroll;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>To do List</h1>
+      <button class="addBtn">+Add Task</button>
+    </header>
+
+    <div class="form-wrapper">
+      <form id="form">
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+        <label class="form-item">
+          <input class="content" type="checkbox" />
+          study
+        </label>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
