@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <style>
     * {
@@ -38,6 +42,28 @@
       padding: 2rem;
       color: rgb(212, 31, 31);
     }
+
+    .form-item button {
+      background: none;
+      border: none;
+      padding: 0;
+      margin-left: auto;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .icon {
+      color: rgb(114, 96, 96);
+    }
+    .form-item button i {
+      font-size: 20px;
+      transition: 0.2s;
+    }
+
+    .icon:hover {
+      color: red;
+      transform: scale(1.2);
+      transition: all 0.2s ease;
+    }
     label {
       height: 65px;
       gap: 1.2rem;
@@ -48,18 +74,20 @@
       align-items: center;
       font-size: 20px;
       text-align: left;
-      min-width: 400px;
+      min-width: 600px;
       outline: 1px solid rgb(73, 72, 72);
     }
 
     label:has(input:checked) {
       text-decoration: line-through;
-      filter: grayscale(72%) blur(1px);
+      filter: grayscale(65%) blur(1px);
       opacity: 0.5;
+      .icon {
+        color: rgb(255, 15, 15);
+      }
     }
 
     form {
-      /* max-height: 500px; */
       margin: 0.6rem 6rem;
       display: flex;
       flex-direction: column;
@@ -69,12 +97,12 @@
       gap: 1.2rem;
 
       /* mask-image: linear-gradient(
-        to bottom,
-        transparent 0%,
-        black 8%,
-        black 92%,
-        transparent 100%
-      ); */
+                to bottom,
+                transparent 0%,
+                black 8%,
+                black 92%,
+                transparent 100%
+              ); */
     }
 
     ::-webkit-scrollbar {
@@ -99,7 +127,15 @@
       border: 1px solid rgb(159, 158, 158);
       border-radius: 20px;
       text-align: center;
+      transition: all 0.2s ease;
     }
+    .addBtn:hover {
+      background-color: #777;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+    }
+
     .form-wrapper {
       max-width: 800px;
       height: 700px;
@@ -118,6 +154,23 @@
       justify-content: center;
     }
 
+    .form-item {
+      display: flex;
+      max-width: 450px;
+      word-break: normal;
+      overflow-wrap: break-word;
+      height: auto;
+      align-items: center;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      justify-content: space-between;
+      transition: transform 0.1s ease-in;
+    }
+    .form-item:hover {
+      transform: translateX(12px);
+      background-color: #3a3939;
+    }
+
     /*---------modal----------*/
 
     .modal {
@@ -132,7 +185,7 @@
       z-index: 999;
     }
 
-    .modal-hide {
+    .modal-show {
       display: flex;
     }
 
@@ -180,13 +233,27 @@
       padding: 12px 30px;
       font-size: 1.08rem;
       border: none;
-      background-color: #4e4d4d;
       border-radius: 10px;
       color: white;
+    }
+    #modal-close {
+      background-color: #4e4d4d;
+      transition: all 0.2s ease-in;
+    }
+    #modal-close:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 8px rgba(124, 121, 121, 0.5);
+      cursor: pointer;
     }
 
     #modal-add {
       background-color: rgba(210, 43, 43, 0.878);
+      transition: all 0.2s ease-in;
+    }
+    #modal-add:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px rgb(170, 8, 8);
+      cursor: pointer;
     }
 
     .red-shadow {
@@ -198,6 +265,25 @@
     .text-shadow {
       text-shadow: 0 0 3px rgb(117, 115, 115);
     }
+
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #222;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: 0.3s;
+      z-index: 10000;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(1);
+    }
   </style>
   <body>
     <header>
@@ -208,110 +294,7 @@
     <main>
       <div class="form-wrapper">
         <form id="form">
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            👷🏼👷🏼study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            🏗️🏗️study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            🐊🐊study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            🐺🐺 study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
-          <label class="form-item">
-            <input class="content" type="checkbox" />
-            study
-          </label>
+          <!-- tasks -->
         </form>
       </div>
     </main>
@@ -323,17 +306,15 @@
             <h2 class="text-shadow">Add Task</h2>
             <input id="task-input" type="text" placeholder="Enter Your Task" />
             <div class="btn-container">
-              <button type="submit" id="modal-add" class="red-shadow">
-                Create
-              </button>
-              <button type="button" id="modal-close" class="white-shadow">
-                Close
-              </button>
+              <button type="submit" id="modal-add">Create</button>
+              <button type="button" id="modal-close">Close</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div id="toast" class="toast"></div>
     <script src="script.js"></script>
   </body>
 </html>
