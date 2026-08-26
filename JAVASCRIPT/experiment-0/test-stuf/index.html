@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+         * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: #222;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .color-box {
+            height: 120px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Random Color</h2>
+
+      <div class="color-box" id="colorBox"></div>
+
+      <p id="colorCode">RGB(0, 0, 0)</p>
+
+      <button id="generateBtn">Generate Color</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

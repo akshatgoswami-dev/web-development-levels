@@ -9,5 +9,8 @@
     ],
     "codeium.enableCodeLens": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.colorTheme": "Dark Modern"
+    "workbench.colorTheme": "Dark Modern",
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
