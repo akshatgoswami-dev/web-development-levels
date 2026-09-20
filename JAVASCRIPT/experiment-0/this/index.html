@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: auto;
+      background-color: #020202;
+      font-family: Georgia, serif;
+    }
+
+    h1 {
+      color: rgb(5, 246, 5);
+      user-select: none;
+      text-transform: capitalize;
+      text-shadow: 0 0 4px rgb(5, 246, 5);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    input {
+      padding: 12px 22px;
+      border-radius: 10px;
+      border: 1px solid grey;
+      font-size: 1rem;
+      user-select: none;
+      background-color: #020202;
+      margin: 1rem 0;
+      color: rgb(5, 113, 5);
+    }
+
+    input::placeholder {
+      background-color: #020202;
+    }
+
+    #sub {
+      transition: all 0.2s ease;
+    }
+    #sub:hover {
+      cursor: pointer;
+      color: rgb(12, 221, 12);
+      background-color: #282727;
+      border-radius: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>>Click here after submitting<</h1>
+      <input type="text" placeholder="Enter  Your  Input" id="Input" />
+      <input type="submit" id="sub" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
